@@ -39,3 +39,29 @@ console.log(replaceEven())
 //Expected output
 //Given arr == ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
 //Output arr == ["even index","Baseball","even index","Goku","even index","Rodger"
+
+//-------------------------Reworked Code Wars #1:---------------//
+//Create a function that takes 2 nonnegative integers in form of a string as an input, and outputs the sum (also as a string)://
+//Notes:
+//If either input is an empty string, consider it as zero.
+//Inputs and the expected output will never exceed the signed 32-bit integer limit (2^31 - 1)
+//Example: (Input1, Input2 -->Output)
+
+function sumStrings(a, b){
+    const sum = a + b
+    let convertsum = `${sum}`
+    return convertsum
+}   
+console.log(sumStrings(4, 5) )
+
+//-------------------------Reworked Code Wars #2:---------------//
+//Write a function called repeatStr which repeats the given string string exactly n times.
+
+//repeatStr(6, "I") // "IIIIII"
+//repeatStr(5, "Hello") // "HelloHelloHelloHelloHello"
+
+function repeatStr(n, str1){
+    return str1.repeat(n)
+}
+console.log(repeatStr(7, 'seven is a magic number'))
+
